@@ -1,0 +1,508 @@
+/*  General */
+    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    .body {
+        font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif !important;
+        margin-bottom:50px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+    }
+    .row.content {
+        height: auto;
+    }
+    @media screen and (max-width: 767px) {
+        .sidenav {
+            height: auto;
+            padding: 15px;
+        }
+
+        .row.content {
+            height: auto;
+        }
+
+        #logo {
+            display: none;
+        }
+    }
+    .container-fluid {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    #link {
+        color: rgb(82, 206, 93);
+    }
+    #quickRN-Link {
+        margin-bottom: 5%;
+    }
+
+
+
+/*  Nav */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background: #FFFFFF;
+        border: 0px !important;
+        border-bottom: 3px solid #2e2d20 !important;
+    }
+    .navbar-header {
+        width: 50%;
+        height: 50px;
+    }
+    .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+    #logo {
+        width: 100%;
+        height: 50px;
+    }
+    .logo-container {
+        width: 15%;
+        padding-left: 5%;
+        height: 70%;
+        
+    }
+    .navbar .navbar-nav > li > a,
+    .navbar .navbar-nav > .active > a{
+        color: #BFBFBF;
+    }
+    .navbar .navbar-nav > li > a:hover,
+    .navbar .navbar-nav > li > a:focus,
+    .navbar .navbar-nav > .active > a:hover,
+    .navbar .navbar-nav > .active > a:focus {
+        color: #96b556;
+    }
+    .active a{
+        color: #96b556 !important;;
+        background-color: white !important;
+    }
+
+
+
+/*  Footer */
+    footer {
+        background-image: linear-gradient(to bottom right, #2e2d20e0, #2e2d20);
+        color: white;
+        height: 4em;
+        bottom: 0;
+        left: 0;
+        font-size: small;
+        width: 100%;
+        position: relative;
+        padding-top:15px; 
+        margin-bottom: 0px;
+    }
+
+
+
+/*  Program / Download Page */
+    .fa-download {
+        font-size: 300%;
+        display: inline-block;
+        color: #96b556;
+        text-align: right;
+        margin-top: 7%;
+    }
+    #program-info {
+        text-align:  center;
+        width: 83.2%;
+        height: auto;
+        margin: 0 auto;
+        font-size: 150%;
+        border: 4px solid rgba(255, 255, 255, 0);
+        line-height: 25px;
+        background-color: white;
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+        border-radius: 7px;
+        margin-top: 5%;
+    }
+    .week-box-left {
+        background-color: white;
+        width: 80%;
+        height: auto;
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+        border-radius: 5px;
+        margin-top: 5%;
+        margin-left: 10%;
+        float: left;
+    }
+    .week-box-right { 
+        background-color: white;
+        width: 80%;
+        height: auto;
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+        border-radius: 5px;
+        margin-top: 5%;
+        margin-left: 10%;
+        float: left;
+    }
+    .week-content {
+        display: inline-block;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-left: 6%;
+        background-color: white;
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+        border-radius: 5px;
+    }
+    .week-header {
+        text-align: center;
+    }
+    .day-section {
+        border: 1px solid rgb(38, 0, 255);
+        height: 75px;
+    }
+    .day-content {
+        width: 60%;
+        height: auto;
+        font-size: x-large;
+        color: #2e2d20;
+        text-align: left;
+        border: 1px solid red;
+        display: inline-block;
+        margin-left: 15%;
+    }
+    .day-download {
+        width: 10%;
+        border: 1px solid rgb(0, 255, 42);
+        display: inline-block;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+/*  Home Page */
+    .welcomeVideo {
+        position: relative;
+        width: 90%;
+        padding-bottom: 45%;
+        height: 0;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .welcomeVideo iframe{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+    #welcome-text {
+        width: 70%;
+        height: auto;
+        font-size: 16px;
+        color: #002E3A;
+        font-weight: bold;
+        margin-left: 3%;
+        display: inline-block;
+    }
+    #top-page-content {
+        width: 80%;
+        height: auto;
+        background-color: #2e2d208a;
+        color: #ffffff;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #welcome-content {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        text-align: center;
+        border-bottom: 3px solid #3e2723;
+        border-top: 3px solid #3e2723;
+    }
+    #help-content {
+        width: 100%;
+        height: 100px;
+    }
+    #ottawa-content {
+        width: 100%;
+        height: 300px;
+        color: white;
+        background-color: #3e2723;
+        background-image: linear-gradient(to bottom right, #795548, #5D4037);
+        border-top: 3px solid white;
+    }
+    .bottom-content {
+        width: 100%;
+        height: auto;
+        min-height: 10px;
+        color: white;
+        background-color: #3e2723;
+        background-image: linear-gradient(to bottom right, #888888, #2e2d20);
+        border-top: 3px solid white;
+    }
+    .overview-text {
+        text-align:  left;
+        width: 70%;
+        margin: 0 auto;
+        border: 4px solid rgba(255, 255, 255, 0);
+        line-height: 25px;
+        background-color: white;
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+        border-radius: 7px;
+        margin-bottom: 5%;
+        font-size: 100%;
+    }
+    #ottawa-text {
+        text-align:  left;
+        width: 70%;
+        margin: 0 auto;
+        border: 4px solid rgba(255, 255, 255, 0);
+    }
+
+/*   Contact Page   */
+    #contact-box {
+        margin: 0 auto;
+        width: 70%;
+        background-color: #96b556;
+        border-radius: 15px;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .contact-page {
+        background-color: rgb(0, 0, 0);
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+    }
+    #submit-btn {
+        background-color: white;
+        color: #96b556;
+        margin-bottom: 2%;
+    }
+    .contact-header {
+        text-align: center;
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: #dff7ad;
+    }
+    .form-design {
+        border: 0px solid red;
+        width: 80%;
+        border-radius: 15px;
+        margin-top: 5%;
+    }
+
+/*  About Page */
+    .image-box {
+        border-radius: 25px; 
+        box-shadow: 0 4px 8px 0 rgba(0, 4, 4, 0.5), 0 6px 20px 0 rgba(0, 0, 15, 0.19);
+        text-align: left;
+        padding: 0px;
+        width: 20%;
+        height: auto;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        font-size: 80%;
+        display: inline-block;
+    }
+    .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+    .content-box-left {
+        background-color: white;
+        width: 50%;
+        height: auto;
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+        border-radius: 5px;
+        margin-left: 15%;
+        float: left;
+        padding-bottom: 40px;
+    }
+    .content-box-right { 
+        background-color: white;
+        width: 30%;
+        height: auto;
+        border-top: 3px solid #dff7ad;
+        border-bottom: 3px solid #dff7ad;
+        border-radius: 5px;
+        margin-right: 15%;
+        float: right;
+    }
+    #nel-statement {
+        width: 50%;
+        margin-left: 5%;
+        border-left: 2px solid #dff7ad;
+        font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+        padding-left: 1rem;
+        display: inline-block;
+    }
+    #about-photo {
+        width: 100%;
+        height: 75%;   
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .photo-text {
+        margin-left: 4%;
+        padding-top: 5px;
+        color: rgba(2, 76, 126, 0.774);
+        font-size: 16px;
+        font-size: 1vw;
+        width: 100%;
+        height: auto;
+    }
+
+/* Training Page */
+.left {
+    text-align: left;
+    padding-left: 5px;
+}
+
+#training-info {
+    text-align:  center;
+    width: 83.2%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 16px;
+    border: 4px solid rgba(255, 255, 255, 0);
+    line-height: 25px;
+    background-color: #E3E9ED;
+    border-top: 3px solid #dff7ad;
+    border-bottom: 3px solid #dff7ad;
+    border-radius: 7px;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+.training-box {
+    text-align:  left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.highlight {
+    color: #004455;
+}
+
+.head-title {
+    text-align: center;
+}
+
+#project-photo {
+    max-width: 100%;
+    max-height: 360px;
+    height: auto;
+    float: center;
+}
+
+
+/*  Background Images   */
+.parallax {
+    background-image: url("/assets/images/parallax-5.jpg");
+    height: auto;
+    min-height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid #dff7ad;
+    border-bottom: 3px solid #dff7ad;
+  }
+
+  .parallax-2 {
+    background-image: url("/assets/images/farm-1.jpg");
+    height: 500px;
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid #dff7ad;
+    border-bottom: 3px solid #dff7ad;
+  }
+
+  .parallax-3 {
+    background-image: url("/assets/images/parallax-1.jpg");
+    height: auto;
+    min-height: 1500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid #dff7ad;
+    border-bottom: 3px solid #dff7ad;
+  }
+
+  .parallax-4 {
+    background-image: url("/assets/images/parallax-6.jpg");
+    height: 1150px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid #dff7ad;
+    border-bottom: 3px solid #dff7ad;
+  }
+
+/*   Form style   */
+
+  /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 8px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
