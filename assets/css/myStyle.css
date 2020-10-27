@@ -1,12 +1,12 @@
 /*  General */
-    
+
     html,body
     {
         width: 100%;
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
     .body {
         font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif !important;
@@ -71,7 +71,7 @@
         width: 15%;
         padding-left: 5%;
         height: 70%;
-        
+
     }
     .navbar .navbar-nav > li > a,
     .navbar .navbar-nav > .active > a{
@@ -100,7 +100,7 @@
         font-size: small;
         width: 100%;
         position: relative;
-        padding-top:15px; 
+        padding-top:15px;
         margin-bottom: 0px;
     }
 
@@ -139,7 +139,7 @@
         margin-left: 10%;
         float: left;
     }
-    .week-box-right { 
+    .week-box-right {
         background-color: white;
         width: 80%;
         height: auto;
@@ -187,12 +187,12 @@
         border-collapse: collapse;
         width: 100%;
       }
-      
+
       th, td {
         text-align: left;
         padding: 8px;
       }
-      
+
       tr:nth-child(even) {background-color: #f2f2f2;}
 
 
@@ -226,9 +226,12 @@
         height: auto;
         background-color: #2e2d208a;
         color: #ffffff;
-        margin: 0 auto;
+		margin-top: 1%;
         text-align: center;
-        border-radius: 5px;
+		border-radius: 5px;
+		float: center;
+		margin-left: 9.5%;
+		padding-bottom: 1%;
     }
     #welcome-content {
         width: 100%;
@@ -254,9 +257,9 @@
         width: 100%;
         height: auto;
         min-height: 10px;
-        color: white;
-        background-color: #3e2723;
-        background-image: linear-gradient(to bottom right, #888888, #2e2d20);
+        font-weight: bold;
+        background-color: white;
+		color: #002E3A;
         border-top: 3px solid white;
     }
     .overview-text {
@@ -281,22 +284,17 @@
 
 /*   Contact Page   */
     #contact-box {
-        margin: 0 auto;
-        width: 70%;
-        background-color: #96b556;
-        border-radius: 15px;
-        margin-top: 5%;
         text-align: center;
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: #dff7ad;
     }
     .contact-page {
         background-color: rgb(0, 0, 0);
         border-top: 3px solid #dff7ad;
         border-bottom: 3px solid #dff7ad;
-    }
-    #submit-btn {
-        background-color: white;
-        color: #96b556;
-        margin-bottom: 2%;
     }
     .contact-header {
         text-align: center;
@@ -305,17 +303,11 @@
         margin-top: 5%;
         margin-bottom: 5%;
         color: #dff7ad;
-    }
-    .form-design {
-        border: 0px solid red;
-        width: 80%;
-        border-radius: 15px;
-        margin-top: 5%;
-    }
+	}
 
 /*  About Page */
     .image-box {
-        border-radius: 25px; 
+        border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0, 4, 4, 0.5), 0 6px 20px 0 rgba(0, 0, 15, 0.19);
         text-align: left;
         padding: 0px;
@@ -342,7 +334,7 @@
         float: left;
         padding-bottom: 40px;
     }
-    .content-box-right { 
+    .content-box-right {
         background-color: white;
         width: 30%;
         height: auto;
@@ -362,7 +354,7 @@
     }
     #about-photo {
         width: 100%;
-        height: 75%;   
+        height: 75%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
@@ -435,8 +427,8 @@
   }
 
   .parallax-2 {
-    background-image: url("/assets/images/farm-1.jpg");
-    height: 500px;
+    background-image: url("/assets/images/parallax-1.jpg");
+    height: 300px;
     width: auto;
     background-attachment: fixed;
     background-position: center;
@@ -476,7 +468,7 @@
   /* Style inputs with type="text", select elements and textareas */
     input[type=text], select, textarea {
         width: 100%; /* Full width */
-        padding: 12px; /* Some padding */ 
+        padding: 12px; /* Some padding */
         border: 1px solid #ccc; /* Gray border */
         border-radius: 8px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -484,7 +476,7 @@
         margin-bottom: 16px; /* Bottom margin */
         resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
     }
-    
+
     /* Style the submit button with a specific background color etc */
     input[type=submit] {
         background-color: #4CAF50;
@@ -494,12 +486,12 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    
+
     /* When moving the mouse over the submit button, add a darker green color */
     input[type=submit]:hover {
         background-color: #45a049;
     }
-    
+
     /* Add a background color and some padding around the form */
     .container {
         border-radius: 5px;
